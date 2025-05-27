@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #F0F5F9;
-  font-family: 'Afacad', sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,9 +9,9 @@ body {
 }
 
 .mobile-container {
-  width: 360px;
-  height: 640px;
-  background-color: #F0F5F9;
+  width: 412px;
+  height: 915px;
+  background-color: #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   overflow: auto;
   padding: 20px;
@@ -21,13 +21,14 @@ body {
   justify-content: space-between;
 }
 
-
 .register-screen {
   width: 360px;
   height: 640px;
   margin: 0 auto;
   padding: 30px 20px;
   box-sizing: border-box;
+  position: relative;
+  bottom: -100px;
 }
 
 h1 {
@@ -39,6 +40,12 @@ h1 {
 .subtitle {
   margin: 0 0 20px;
   font-size: 14px;
+}
+
+form {
+  position: relative;
+  margin: 0  auto;
+  bottom: -80px;
 }
 
 form input {

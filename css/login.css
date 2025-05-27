@@ -1,134 +1,404 @@
+.login {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.login .div {
+  background-color: #ffffff;
+  width: 441px;
+  height: 947px;
+  position: relative;
+}
+
+.login .group {
+  position: absolute;
+  width: 206px;
+  height: 53px;
+  top: 797px;
+  left: 117px;
+}
+
+.login .overlap-group {
+  position: relative;
+  width: 204px;
+  height: 53px;
+  background-color: #1f2022;
+  border-radius: 5px;
+}
+
+.login .h {
+  width: 131px;
+  height: 25px;
+  top: 14px;
+  left: 36px;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #f0f5f9;
+  font-size: 14px;
+  position: absolute;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+.login .p {
+  width: 252px;
+  top: 862px;
+  left: 96px;
+  font-family: "Afacad-Regular", Helvetica;
+  font-weight: 400;
+  color: #1f2022;
+  font-size: 16px;
+  white-space: nowrap;
+  position: absolute;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+.login .text-wrapper {
+  font-family: "Afacad-Regular", Helvetica;
+  font-weight: 400;
+  color: #1f2022;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+.login .span {
+  font-family: "Afacad-Bold", Helvetica;
+  font-weight: 700;
+}
+
+.login .image {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 639px;
+  left: 200px;
+  object-fit: cover;
+}
+
+.login .finly {
+  position: absolute;
+  top: 419px;
+  left: 147px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: transparent;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.login .text-wrapper-2 {
+  color: #020202;
+}
+
+.login .text-wrapper-3 {
+  color: #514c71;
+}
+
+.login .text-wrapper-4 {
+  position: absolute;
+  top: 473px;
+  left: 106px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.login .overlap {
+  position: absolute;
+  width: 46px;
+  height: 66px;
+  top: 720px;
+  left: 117px;
+}
+
+.login .rectangle {
+  left: 0;
+  background-color: #a3f3bb;
+  border-radius: 5px;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 0;
+}
+
+.login .send-money {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 14px;
+}
+
+.login .text-wrapper-5 {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.login .overlap-2 {
+  position: absolute;
+  width: 48px;
+  height: 66px;
+  top: 720px;
+  left: 196px;
+}
+
+.login .rectangle-2 {
+  left: 2px;
+  background-color: #e2c471;
+  border-radius: 4px;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 0;
+}
+
+.login .wallet-arrow {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 13px;
+  left: 15px;
+}
+
+.login .overlap-3 {
+  position: absolute;
+  width: 56px;
+  height: 66px;
+  top: 720px;
+  left: 270px;
+}
+
+.login .rectangle-3 {
+  left: 6px;
+  background-color: #8adafc;
+  border-radius: 3px;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 0;
+}
+
+.login .vector {
+  position: absolute;
+  width: 17px;
+  height: 18px;
+  top: 14px;
+  left: 19px;
+}
+/* Inject original CSS here */
+
+/* Additional styles */
 body {
-  margin: 0;
-  background-color: #F0F5F9;
-  font-family: 'Afacad', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  background-color: #ffffff;
 }
 
-.mobile-container {
-  width: 360px;
-  height: 640px;
-  background-color: #F0F5F9;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  overflow: auto;
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 441px;
+  width: 100%;
   padding: 20px;
-  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-name {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.app-name-first {
+  color: #020202;
+}
+
+.app-name-last {
+  color: #514c71;
+}
+
+.app-tagline {
+  font-size: 20px;
+  color: #000000;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: -130px;
+}
+
+.features ul {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  margin: 5px;
+  position: relative;
+  bottom: -170px;
+  gap: 25px;
 }
 
-.login-screen {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
+.feature-item {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centers the first part vertically */
   align-items: center;
-  padding: 30px 20px;
 }
 
-h1 {
-  font-size: 28px;
+.feature-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.feature-icon.transfer {
+  background-color: #a3f3bb;
+}
+
+.feature-icon.transfer img {
+  width: 16px;
+  height: 16px;
+}
+
+.feature-icon.e-wallet {
+  background-color: #e2c471;
+}
+
+.feature-icon.e-wallet img {
+  width: 16px;
+  height: 16px;
+}
+
+.feature-icon.payments {
+  background-color: #8adafc;
+}
+
+.feature-icon.payments img {
+  width: 16px;
+  height: 16px;
+}
+
+.feature-label {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.login-form {
+  width: 100%;
   margin-bottom: 10px;
 }
 
-.subtitle {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.dark {
-  color: #1E2022;
-}
-
-.accent {
-  color: #52616B;
-}
-
-.face-id {
-  font-size: 36px;
-  margin: 20px 0;
-  text-align: center;
+.login-button {
+  position: relative;
   width: 100%;
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.feature {
-  padding: 10px 14px;
-  border-radius: 8px;
-  font-size: 12px;
-  color: white;
-  text-align: center;
-  min-width: 80px;
-}
-
-.transfer {
-  background-color: #5FDB9D;
-}
-
-.wallet {
-  background-color: #D4A546;
-}
-
-.payment {
-  background-color: #5DA7F2;
-}
-
-.login-btn {
-  width: 100%;
-  padding: 10px;
-  background-color: #1E2022;
-  color: white;
-  font-size: 14px;
+  padding: 14px;
+  background-color: #1f2022;
+  color: #f0f5f9;
   border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin: 10px auto;
-  display: block;
-}
-
-.signup-text {
-  font-size: 12px;
-  text-align: center;
-  width: 100%;
-}
-
-.signup-text a {
-  color: #52616B;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.login-logo {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.login-logo h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-
-.login-logo .subtitle {
+  border-radius: 5px;
   font-size: 14px;
-  margin: 0;
+  font-weight: 700;
+  cursor: pointer;
+  bottom: -180px;
 }
 
-.login-content {
-  width: 100%;
+.signup-prompt {
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  bottom: -200px;
+}
+
+.signup-link {
+  font-weight: 700;
+  color: #1f2022;
+}
+
+/* Face ID Alert Notification */
+#faceIdAlert {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 130px;
+  padding: 20px;
+  background: #222;
+  color: #a1f293;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #a1f293aa;
+  font-size: 48px;
+  font-family: "SF Pro-Light", Helvetica, Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+#faceIdAlert.show {
+  display: flex;
+}
+
+
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .app-name {
+    font-size: 48px;
+  }
+
+  .app-tagline {
+    font-size: 16px;
+  }
+
+  .features ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feature-item {
+    margin: 0 10px 10px;
+  }
 }

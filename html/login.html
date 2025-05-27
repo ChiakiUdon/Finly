@@ -1,28 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - Finly</title>
-  <link href="https://fonts.googleapis.com/css2?family=Afacad&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/login.css" />
-</head>
-<body>
-  <div class="mobile-container">
-<div class="login-logo">
-  <h1><span class="dark">Fin</span><span class="accent">ly</span></h1>
-  <p class="subtitle">Your Pocket Sized Bank</p>
-</div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/styleguide.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <title>Finly - Your Pocket Sized Bank</title>
+  </head>
+  <body>
+    <main class="login">
+      <div class="login-container">
+        <header>
+          <h1 class="app-name">
+            <span class="app-name-first">Fin</span
+            ><span class="app-name-last">ly</span>
+          </h1>
+          <p class="app-tagline">Your Pocket Sized Bank</p>
+        </header>
+        <img class="logo" src="/assets/faceid.svg" alt="Finly logo" />
+        <nav class="features">
+          <ul>
+            <li class="feature-item">
+              <div class="feature-icon transfer">
+                <img src="/assets/send-money.svg" alt="Transfer icon" />
+              </div>
+              <span class="feature-label">Transfer</span>
+            </li>
+            <li class="feature-item">
+              <div class="feature-icon e-wallet">
+                <img src="/assets/wallet-arrow.svg" alt="E-Wallet icon" />
+              </div>
+              <span class="feature-label">E-Wallet</span>
+            </li>
+            <li class="feature-item">
+              <div class="feature-icon payments">
+                <img
+                  src="/assets/file-invoice-dollar.svg"
+                  alt="Payments icon"
+                />
+              </div>
+              <span class="feature-label">Payments</span>
+            </li>
+          </ul>
+        </nav>
+        <form class="login-form">
+          <button type="submit" class="login-button">Login</button>
+        </form>
+        <p class="signup-prompt">
+          Don't have an account? <a href="#" class="signup-link">Sign Up</a>
+        </p>
+      </div>
+    </main>
+    <div class="alert-notification" id="faceIdAlert">
+      <div class="face-id-icon">
+        <img
+          class="face-id-icon"
+          src="/assets/Face ID Symbol.svg"
+          alt="face-id"
+        />
+      </div>
+    </div>
+  </body>
+  <script>
+    const faceIdAlert = document.getElementById("faceIdAlert");
+    const logo = document.querySelector(".logo");
 
-<div class="login-content">
-  <div class="face-id">🙂</div>
-  <div class="features">
-    <div class="feature transfer">Transfer</div>
-    <div class="feature wallet">E-Wallet</div>
-    <div class="feature payment">Payments</div>
-  </div>
-  <button class="login-btn">Login</button>
-  <p class="signup-text">Don't have an account? <a href="register.html">Sign Up</a></p>
-</div>
-</body>
+    logo.addEventListener("click", () => {
+      faceIdAlert.classList.add("show");
+
+      // Hide the alert after 2 seconds
+      setTimeout(() => {
+        alertBox.style.display = "none";
+        window.location.href = "dashboard.html"; // Change this to your target page
+      }, 2000);
+    });
+  </script>
 </html>
