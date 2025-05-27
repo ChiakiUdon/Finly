@@ -44,7 +44,7 @@
             </li>
           </ul>
         </nav>
-        <form class="login-form">
+        <form class="login-form" action="input-pin.html" method="GET">
           <button type="submit" class="login-button">Login</button>
         </form>
         <p class="signup-prompt">
@@ -63,16 +63,16 @@
     </div>
   </body>
   <script>
-    const faceIdAlert = document.getElementById("faceIdAlert");
-    const logo = document.querySelector(".logo");
+    const faceIdAlert = document.getElementById('faceIdAlert');
+    const logo = document.querySelector('.logo');
 
-    logo.addEventListener("click", () => {
-      faceIdAlert.classList.add("show");
+    logo.addEventListener('click', () => {
+      faceIdAlert.classList.add('show');
 
       // Hide the alert after 2 seconds
       setTimeout(() => {
-        alertBox.style.display = "none";
-        window.location.href = "dashboard.html"; // Change this to your target page
+        faceIdAlert.classList.remove('show');
+        window.location.href = 'dashboard.html';
       }, 2000);
     });
   </script>
