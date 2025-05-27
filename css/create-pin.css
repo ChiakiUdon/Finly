@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Afacad', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0F5F9;
+  height: 100vh;
+}
+
+.pin-container {
+  width: 360px;
+  height: 640px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #1E2022;
+}
+
+.pin-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.pin-input input {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+  padding: 20px;
+  background-color: #F0F5F9;
+  border-radius: 20px;
+}
+
+.keypad button {
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: #D6E4F0;
+  color: #1E2022;
+  cursor: pointer;
+}
+
+.keypad button.clear {
+  background-color: #000;
+  color: #fff;
+}
+
+.keypad button.submit {
+  background-color: #fff;
+  border: 2px solid #1E2022;
+  font-size: 20px;
+}
