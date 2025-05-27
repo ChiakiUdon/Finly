@@ -8,17 +8,29 @@
   <link rel="stylesheet" href="../css/register.css" />
 </head>
 <body>
-  <div class="register-screen">
-    <h1>Register</h1>
-    <p class="subtitle">Please Input<br><strong>Personal Details</strong></p>
-    <form>
-      <input type="text" placeholder="Full Name" />
-      <input type="text" placeholder="Number Phone" />
-      <input type="email" placeholder="E-Mail" />
-      <input type="password" placeholder="Password" />
-      <input type="password" placeholder="Password Confirmation" />
-      <button type="submit">Next</button>
-    </form>
+  <div class="mobile-container">
+    <div class="register-screen">
+      <h1>Register</h1>
+      <p class="subtitle">Please Input<br>Personal Details</p>
+      <form>
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" />
+
+        <label for="phone">Number Phone</label>
+        <input type="text" id="phone" name="phone" />
+
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+
+        <label for="confirm-password">Password Confirmation</label>
+        <input type="password" id="confirm-password" name="confirm-password" />
+
+        <button type="submit">Next</button>
+      </form>
+    </div>
   </div>
 </body>
 </html>

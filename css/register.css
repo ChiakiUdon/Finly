@@ -1,9 +1,26 @@
 body {
   margin: 0;
-  font-family: 'Afacad', sans-serif;
   background-color: #F0F5F9;
-  color: #1E2022;
+  font-family: 'Afacad', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+.mobile-container {
+  width: 360px;
+  height: 640px;
+  background-color: #F0F5F9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 .register-screen {
   width: 360px;
@@ -25,18 +42,18 @@ h1 {
 }
 
 form input {
-  display: block;
   width: 100%;
-  margin-bottom: 15px;
   padding: 10px;
   border: none;
   background-color: #C9D6DF;
   border-radius: 6px;
   font-size: 14px;
+  box-sizing: border-box;
+  margin-top: 5px;
 }
 
 form button {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   background-color: #1E2022;
   color: white;
@@ -44,4 +61,19 @@ form button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  margin: 20px auto 0;
+  display: block; 
+}
+
+.register-screen h1,
+.register-screen .subtitle {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin: 20px 0 5px;
+  font-size: 13px;
+  color: #52616B;
+  font-weight: 500;
 }
