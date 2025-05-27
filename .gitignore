@@ -1,0 +1,13 @@
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Node (if you're using npm for build tools)
+node_modules/
+
+# Build output (if using tools like Vite, Webpack, etc.)
+dist/
+build/
