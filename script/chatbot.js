@@ -25,7 +25,7 @@ sendBtn.addEventListener('click', () => {
 
   // Fake bot reply after delay
   setTimeout(() => {
-    addMessage("Thank you! We'll get back to you shortly.", 'bot');
+    addMessage("Thank you for using our chatbot! We'll get back to you shortly.", 'bot');
     randomEstimatedTime(); // Refresh response time
   }, 1000);
 });
