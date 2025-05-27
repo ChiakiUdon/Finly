@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot - Finly</title>
+  <link rel="stylesheet" href="../css/chatbot.css" />
+</head>
+<body>
+  <div class="chat-container">
+
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+      <div class="top-header">
+        <h1>Finly</h1>
+        <button class="exit-btn">Exit</button>
+      </div>
+      <div class="sub-header">
+        <div class="left">
+          <span class="back-arrow">←</span>
+          <div class="text">
+            <span class="title">Customer Service</span>
+            <p class="subtitle">This is an AI based chatbot.</p>
+          </div>
+        </div>
+        <div class="right">
+          <span class="icon">🔔</span>
+          <span class="icon">🔖</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chat-window">
+      <div class="bot-message">Hi, User!<br>Lorem Ipsum</div>
+    </div>
+
+    <!-- ✅ Common Questions -->
+    <div class="common-questions">
+      <button>Common Question</button>
+      <button>Common Question</button>
+      <button>Common Question</button>
+    </div>
+
+    <!-- Response Time -->
+    <div id="response-time">Estimated time to respond: 1 Minute</div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Type a message..." />
+      <button id="send-btn">➤</button>
+    </div>
+  </div>
+
+  <script src="../script/chatbot.js"></script>
+</body>
+</html>
