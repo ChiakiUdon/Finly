@@ -1,17 +1,35 @@
 body {
   margin: 0;
-  font-family: 'Afacad', sans-serif;
   background-color: #F0F5F9;
-  color: #1E2022;
+  font-family: 'Afacad', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mobile-container {
+  width: 360px;
+  height: 640px;
+  background-color: #F0F5F9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .login-screen {
-  width: 360px;
-  height: 640px;
-  margin: 0 auto;
-  padding: 30px 20px;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers the first part vertically */
+  align-items: center;
+  padding: 30px 20px;
 }
 
 h1 {
@@ -35,21 +53,25 @@ h1 {
 .face-id {
   font-size: 36px;
   margin: 20px 0;
+  text-align: center;
+  width: 100%;
 }
 
 .features {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .feature {
-  flex: 1;
-  margin: 0 5px;
-  padding: 10px;
+  padding: 10px 14px;
   border-radius: 8px;
   font-size: 12px;
   color: white;
+  text-align: center;
+  min-width: 80px;
 }
 
 .transfer {
@@ -73,15 +95,40 @@ h1 {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin: 10px auto;
+  display: block;
 }
 
 .signup-text {
   font-size: 12px;
+  text-align: center;
+  width: 100%;
 }
 
 .signup-text a {
   color: #52616B;
   text-decoration: none;
   font-weight: bold;
+}
+
+.login-logo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-logo h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.login-logo .subtitle {
+  font-size: 14px;
+  margin: 0;
+}
+
+.login-content {
+  width: 100%;
 }
