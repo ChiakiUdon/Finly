@@ -1,0 +1,128 @@
+/* Reset and Base */
+body {
+  margin: 0;
+  font-family: 'Afacad', sans-serif;
+  background-color: #F0F5F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.transaction-container {
+  width: 360px;
+  height: 640px;
+  background-color: #F0F5F9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* User Info */
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-info img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #E4EBF1;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Input & Dropdowns */
+.input-field,
+.select-field {
+  width: 100%;
+  background-color: #E4EBF1;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.select-field {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Card Display */
+.card {
+  background-color: #E4EBF1;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.balance {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.button {
+  background-color: #1E2022;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Result Icons */
+.result-icon {
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Success / Fail Text */
+.result-text {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Transaction Details */
+.detail-box {
+  background-color: #E4EBF1;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Utility */
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 12px;
+}

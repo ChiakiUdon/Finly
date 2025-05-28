@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transfer Detail</title>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/transaction.css" />
+</head>
+<body>
+  <div class="transaction-container">
+    <div class="header">Transfer Detail</div>
+    <div class="user-info">
+      <div>
+        <strong>User Account</strong><br>
+        12345531
+      </div>
+      <span>Bank Mandiri</span>
+    </div>
+    <div class="amount">Rp 120.000.000</div>
+    <select class="select-field">
+      <option>Transfer BI Fast (Rp2.500)</option>
+    </select>
+    <textarea class="input-field" placeholder="Note (Optional)"></textarea>
+    <div class="card">
+      Account Number: 1234 5678 1234 5678<br>
+      <span class="balance">Balance: Rp 1.200.922.221</span>
+    </div>
+    <button id="nextButton" class="button">Next</button>
+  </div>
+  <script>
+  document.getElementById('nextButton').addEventListener('click', function () {
+    window.location.href = "transaction-confirm.html";
+  });
+</script>
+</body>
+</html>

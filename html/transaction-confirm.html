@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirm Transaction - Finly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/transaction.css" />
+</head>
+<body>
+  <div class="settings-container">
+    <div class="top-navbar">
+      <div class="top-header">
+        <span class="back-arrow">&#8592;</span>
+        <h1>Confirmation</h1>
+        <div></div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="input-field">
+        <strong>Recipient</strong>
+        <p>User Account<br><small>Bank Mandiri</small><span class="float-right">12345531</span></p>
+      </div>
+
+      <div class="input-field">
+        <strong>Source</strong>
+        <p>User Account<br><small>Bank Mandiri</small><span class="float-right">12345531</span></p>
+      </div>
+
+      <div class="input-field">
+        <strong>Detail Transfer</strong>
+        <p>Transfer Amount: Rp500.000,00</p>
+        <p>Transfer Cost: Rp2.500,00</p>
+        <p><strong>Total Cost:</strong> Rp502.500,00</p>
+      </div>
+
+      <button id="confirmButton" class="button">Confirm</button>
+    </div>
+  </div>
+  <script>
+  document.getElementById('confirmButton').addEventListener('click', function () {
+    // Simulate success or failure randomly
+    const success = Math.random() < 0.7; // 70% chance of success
+    if (success) {
+      window.location.href = "transaction-complete.html";
+    } else {
+      window.location.href = "transaction-fail.html";
+    }
+  });
+</script>
+</body>
+</html>
